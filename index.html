@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med Spa Simi Valley | Simi Doctors Aesthetic & Medical</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            padding-bottom: 20px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Sticky Phone Header */
+        .phone-header {
+            position: sticky;
+            top: 0;
+            background: linear-gradient(135deg, #001f3f 0%, #0a3d62 100%);
+            padding: 14px 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 1000;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid #d4af37;
+        }
+
+        .phone-header a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: 0.8px;
+        }
+
+        .phone-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #ffffff;
+            padding: 40px 20px 50px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: 24px;
+            font-weight: 500;
+            background: linear-gradient(135deg, #001f3f 0%, #0a3d62 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .hero .subheadline {
+            font-size: 20px;
+            font-weight: 300;
+            color: #001f3f;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            line-height: 1.4;
+        }
+
+        .hero .availability {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 36px;
+            font-weight: 300;
+            text-transform: none;
+            letter-spacing: 0.3px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
+            color: #001f3f;
+            padding: 16px 36px;
+            border-radius: 0;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 320px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: 2px solid #d4af37;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+
+        .cta-button:active,
+        .cta-button:hover {
+            background: linear-gradient(135deg, #f4d03f 0%, #d4af37 50%, #f4d03f 100%);
+            border-color: #f4d03f;
+            box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Specials Section */
+        .specials {
+            padding: 50px 20px;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .specials h2 {
+            font-size: 24px;
+            background: linear-gradient(135deg, #001f3f 0%, #0a3d62 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 45px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 2.5px;
+        }
+
+        .specials-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            border: 2px solid #e0e0e0;
+            border-radius: 0;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 6px rgba(0, 31, 63, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: #d4af37;
+            box-shadow: 0 4px 16px rgba(212, 175, 55, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 0;
+            margin-bottom: 15px;
+            background-color: transparent;
+            display: block;
+        }
+
+        .service-card h3 {
+            font-size: 18px;
+            color: #001f3f;
+            margin-bottom: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 1.3;
+        }
+
+        .service-card .description {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 18px;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .service-card .price {
+            font-size: 32px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-align: center;
+            padding: 14px 0;
+            border-top: 3px solid #d4af37;
+            border-bottom: 3px solid #d4af37;
+            text-shadow: 0 2px 4px rgba(212, 175, 55, 0.2);
+        }
+
+        .service-card .call-now {
+            display: block;
+            background: linear-gradient(135deg, #001f3f 0%, #0a3d62 100%);
+            color: #ffffff;
+            padding: 12px 28px;
+            border-radius: 0;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+            border: 2px solid #001f3f;
+            box-shadow: 0 2px 8px rgba(0, 31, 63, 0.2);
+        }
+
+        .service-card .call-now:active,
+        .service-card .call-now:hover {
+            background: linear-gradient(135deg, #0a3d62 0%, #001f3f 100%);
+            border-color: #d4af37;
+            box-shadow: 0 4px 12px rgba(0, 31, 63, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Trust Signals */
+        .trust-signals {
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8ecf0 100%);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .trust-signals h2 {
+            font-size: 24px;
+            background: linear-gradient(135deg, #001f3f 0%, #0a3d62 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 45px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 2.5px;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            gap: 12px;
+        }
+
+        .checkmark {
+            color: #d4af37;
+            font-size: 24px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            font-weight: 700;
+            text-shadow: 0 1px 2px rgba(212, 175, 55, 0.3);
+        }
+
+        .trust-item p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            padding: 50px 20px 40px;
+            background-color: #fff;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .final-cta h2 {
+            font-size: 24px;
+            background: linear-gradient(135deg, #001f3f 0%, #0a3d62 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 28px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 2.5px;
+        }
+
+        .final-cta .cta-button {
+            max-width: 100%;
+        }
+
+        /* Mobile-specific button adjustments */
+        @media (max-width: 480px) {
+            .cta-button {
+                font-size: 14px;
+                padding: 14px 20px;
+                letter-spacing: 1px;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 768px) {
+            .hero {
+                padding: 60px 40px 70px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+                letter-spacing: 1.5px;
+            }
+
+            .hero .subheadline {
+                font-size: 32px;
+                letter-spacing: 3px;
+            }
+
+            .hero .availability {
+                font-size: 18px;
+            }
+
+            .specials {
+                padding: 60px 40px;
+            }
+
+            .specials h2 {
+                font-size: 32px;
+                letter-spacing: 3px;
+            }
+
+            .specials-container {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+
+            .service-card {
+                margin-bottom: 0;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .service-card img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                margin: 0 auto 20px;
+            }
+
+            .service-card .price {
+                font-size: 36px;
+                font-weight: 700;
+            }
+
+            .trust-signals {
+                padding: 60px 40px;
+            }
+
+            .trust-signals h2 {
+                font-size: 32px;
+                letter-spacing: 3px;
+            }
+
+            .trust-item {
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .trust-item p {
+                font-size: 18px;
+            }
+
+            .final-cta {
+                padding: 60px 40px 50px;
+            }
+
+            .final-cta h2 {
+                font-size: 32px;
+                letter-spacing: 3px;
+            }
+
+            .final-cta .cta-button {
+                max-width: 400px;
+                font-size: 20px;
+                padding: 20px 40px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-image {
+                max-width: 800px;
+                margin: 0 auto 40px;
+            }
+
+            .service-card img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Phone Header -->
+    <div class="phone-header">
+        <a href="tel:8055268360">
+            <svg class="phone-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+            </svg>
+            (805) 526-8360
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://simidoctor.com/wp-content/uploads/2021/07/mobile-first-slider.jpg" alt="Simi Doctors Aesthetics & Medical" class="hero-image">
+        <h1>Simi Doctors Aesthetics & Medical Spa</h1>
+        <p class="subheadline">Radiance and<br>Rejuvenation<br>Without Surgery</p>
+        <p class="availability">Same-day appointments available. Little wait time.</p>
+        <a href="tel:8055268360" class="cta-button">Call to Schedule • (805) 526-8360</a>
+    </section>
+
+    <!-- Specials Section -->
+    <section class="specials">
+        <h2>Monthly Promotions</h2>
+        
+        <div class="specials-container">
+            <div class="service-card">
+                <img src="https://simidoctor.com/wp-content/uploads/2025/03/sculpsure-abdomen-2-1024x431.jpg" alt="SculpSure Fat Reduction">
+                <h3>Chin Reduction / Fat Reduction</h3>
+                <p class="description">Non-invasive fat removal using SculpSure and WarmSculpting. FDA-approved laser technology permanently eliminates fat cells with zero downtime. Quick 30-90 minute office visits. Results visible in 3-4 months and last permanently. No incisions, no scarring, no recovery time needed.</p>
+                <div class="price">25% Off</div>
+                <a href="tel:8055268360" class="call-now">Call to Claim 25% Off</a>
+            </div>
+
+            <div class="service-card">
+                <img src="https://simidoctor.com/wp-content/uploads/2025/03/tempsure-neck-2-1024x501.jpg" alt="Tempsure Firm treatment">
+                <h3>Tempsure Firm</h3>
+                <p class="description">Cellulite treatment using radiofrequency heat and specialized massage to temporarily reduce the appearance of cellulite. Skin appears more youthful and evenly textured.</p>
+                <div class="price">25% Off</div>
+                <a href="tel:8055268360" class="call-now">Call for 25% Off</a>
+            </div>
+
+            <div class="service-card">
+                <img src="https://simidoctor.com/wp-content/uploads/2025/03/Lip-Filler-3-1024x716.jpeg" alt="Lip Fillers">
+                <h3>Lip Fillers</h3>
+                <p class="description">$100 off per syringe for select Juvederm fillers, Revanesse, and Restylane. Enhance your lips and facial features with natural-looking results from our master injectors.</p>
+                <div class="price">$100 Off Per Syringe</div>
+                <a href="tel:8055268360" class="call-now">Call to Save $100</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="trust-signals">
+        <h2>Why Choose Simi Doctors</h2>
+        
+        <div class="trust-item">
+            <span class="checkmark">✓</span>
+            <p>Over 40 years of collective experience with board-certified professionals</p>
+        </div>
+
+        <div class="trust-item">
+            <span class="checkmark">✓</span>
+            <p>Non-surgical treatments that deliver powerful results without downtime</p>
+        </div>
+
+        <div class="trust-item">
+            <span class="checkmark">✓</span>
+            <p>Full-service medical spa: face, skin, body, and general practice care</p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <h2>Ready to Schedule?</h2>
+        <a href="tel:8055268360" class="cta-button">Call Now to Schedule • (805) 526-8360</a>
+    </section>
+</body>
+</html>
