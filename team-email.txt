@@ -1,0 +1,27 @@
+Subject: New Landing Page Ready for Testing - simidoctor-calls.vercel.app
+
+Hi Team,
+
+Our new phone conversion landing page is live and ready for testing:
+
+🔗 https://simidoctor-calls.vercel.app/
+
+**What's on it:**
+- November & December specials (Fillers, Cosmetic Injectables, Hair Restoration, Laser Treatments)
+- Mobile-first design optimized for phone calls
+- Sticky phone header: (805) 526-8360
+- All tracking scripts installed (Google Analytics, Google Ads, Clarity, TikTok, Klaviyo)
+
+**Next Steps:**
+1. Set up CallRail account for call tracking (see CALLRAIL-SETUP-GUIDE.md)
+2. Test the page on mobile and desktop
+3. Once CallRail is configured, we can start sending test traffic
+
+**For Email Campaigns:**
+Use the short email template (email-short.txt) with the landing page URL.
+
+Let me know if you see any issues or need changes.
+
+Thanks!
+
+
