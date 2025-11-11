@@ -22,7 +22,7 @@
     gtag('js', new Date());
     gtag('set','linker',{'domains':['simidoctor.com']});
     gtag('set', 'developer_id.dZTNiMT', true);
-    gtag('config', 'G-DDS4W8SECB');
+    gtag('config', 'G-DDS4W8SECB', { send_page_view: true });
     </script>
 
     <!-- Google tag (gtag.js) - Google Ads -->
@@ -103,6 +103,19 @@
 
     <!-- Userway Accessibility -->
     <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "OU3Hw3fEID");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
+
+    <!-- CallRail DNI -->
+    <!-- TODO: Replace REPLACE_COMPANY_ID and REPLACE_KEY with actual values from CallRail Install page -->
+    <!-- Get these values from: CallRail Dashboard > Settings > Install > Dynamic Number Insertion -->
+    <script type="text/javascript">
+      (function(e,t,o,n,r,i){
+        e.CallRailObject = r;
+        var a = e[r] = e[r] || function(){ (a.q = a.q || []).push(arguments) };
+        a.l = 1 * new Date();
+        i = t.createElement(o); i.async = 1; i.src = n;
+        var s = t.getElementsByTagName(o)[0]; s.parentNode.insertBefore(i, s);
+      })(window, document, "script", "https://cdn.callrail.com/companies/REPLACE_COMPANY_ID/REPLACE_KEY/callrail.min.js", "cr");
+    </script>
 
     <!-- Pixel Manager -->
     <script type="text/javascript" data-pagespeed-no-defer data-cfasync="false">
@@ -695,11 +708,11 @@
 
     <!-- Sticky Phone Header -->
     <div class="phone-header">
-        <a href="tel:8055268360">
+        <a href="tel:+18055268360" class="js-swap tel">
             <svg class="phone-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
             </svg>
-            (805) 526-8360
+            <span class="js-swap tel">(805) 526-8360</span>
         </a>
     </div>
 
@@ -724,7 +737,7 @@
         <h1>Simi Doctors Aesthetics & Medical Spa</h1>
         <p class="subheadline">Radiance and<br>Rejuvenation<br>Without Surgery</p>
         <p class="availability">Same-day appointments available. Little wait time.</p>
-        <a href="tel:8055268360" class="cta-button"><span class="button-line1">Call to Schedule</span><span class="button-line2">(805) 526-8360</span></a>
+        <a href="tel:+18055268360" class="cta-button js-swap tel"><span class="button-line1">Call to Schedule</span><span class="button-line2 js-swap tel">(805) 526-8360</span></a>
     </section>
 
     <!-- Specials Section -->
@@ -737,7 +750,7 @@
                 <h3>Refine - Define - Refresh</h3>
                 <p class="description">Get $200 off 2 fillers* and your 3rd filler* 50% off. Enhance your facial features with select Juvederm fillers, Revanesse, and Restylane. Natural-looking results from our master injectors.</p>
                 <div class="price">$200 Off 2 Fillers<br>3rd Filler 50% Off</div>
-                <a href="tel:8055268360" class="call-now">Call to Claim Offer</a>
+                <a href="tel:+18055268360" class="call-now js-swap tel">Call to Claim Offer</a>
             </div>
 
             <div class="service-card">
@@ -745,7 +758,7 @@
                 <h3>Cosmetic Injectables</h3>
                 <p class="description">Buy 50 units of cosmetic injectables and get 10 FREE! Smooth away fine lines and wrinkles with FDA-approved treatments. Quick 15-minute treatments with results lasting 3-4 months.</p>
                 <div class="price">Buy 50 Units<br>Get 10 FREE</div>
-                <a href="tel:8055268360" class="call-now">Call to Claim Offer</a>
+                <a href="tel:+18055268360" class="call-now js-swap tel">Call to Claim Offer</a>
             </div>
 
             <div class="service-card">
@@ -753,7 +766,7 @@
                 <h3>Hair Restoration - Alma TED</h3>
                 <p class="description">3 sessions for $2,800. Save $800! Advanced hair restoration treatments to restore your natural hairline and boost confidence. Using cutting-edge Alma TED technology.</p>
                 <div class="price">3 Sessions $2,800<br>Save $800</div>
-                <a href="tel:8055268360" class="call-now">Call to Save $800</a>
+                <a href="tel:+18055268360" class="call-now js-swap tel">Call to Save $800</a>
             </div>
 
             <div class="service-card">
@@ -761,7 +774,7 @@
                 <h3>Laser Treatments</h3>
                 <p class="description">15% off laser treatments including body sculpting/tightening, sunspots/hyperpigmentation, scars, stretch marks, and laser hair removal. ThreeForMe and advanced laser technology deliver powerful results.</p>
                 <div class="price">15% Off</div>
-                <a href="tel:8055268360" class="call-now">Call to Save 15%</a>
+                <a href="tel:+18055268360" class="call-now js-swap tel">Call to Save 15%</a>
             </div>
         </div>
     </section>
@@ -789,7 +802,7 @@
     <!-- Final CTA -->
     <section class="final-cta">
         <h2>Ready to Schedule?</h2>
-        <a href="tel:8055268360" class="cta-button"><span class="button-line1">Call Now to Schedule</span><span class="button-line2">(805) 526-8360</span></a>
+        <a href="tel:+18055268360" class="cta-button js-swap tel"><span class="button-line1">Call Now to Schedule</span><span class="button-line2 js-swap tel">(805) 526-8360</span></a>
     </section>
 
     <!-- Fake Footer -->
@@ -811,7 +824,7 @@
             </div>
             <div class="footer-info">
                 <h3>Contact</h3>
-                <p><a href="tel:8055268360" style="color: #ffffff; text-decoration: none;">(805) 526-8360</a></p>
+                <p><a href="tel:+18055268360" class="js-swap tel" style="color: #ffffff; text-decoration: none;">(805) 526-8360</a></p>
                 <p>Request appointment</p>
                 <p>4.86/5 ⭐ 71 Reviews</p>
             </div>
@@ -835,5 +848,23 @@
 
     <!-- Pixel Manager JS -->
     <script data-minify="1" src="https://simidoctor.com/wp-content/cache/min/1/wp-content/plugins/pixel-manager-for-woocommerce/admin/pixels/js/pixel-manager.js?ver=1746157144"></script>
+
+    <!-- GA4 click_to_call event tracking -->
+    <script>
+      document.addEventListener('click', function(e) {
+        const a = e.target.closest('a[href^="tel:"]');
+        if (!a) return;
+        try {
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'click_to_call', { 
+              link_url: a.getAttribute('href'),
+              link_text: a.textContent.trim() || a.innerText.trim()
+            });
+          }
+        } catch(err) {
+          console.error('GA4 click_to_call tracking error:', err);
+        }
+      });
+    </script>
 </body>
 </html>
