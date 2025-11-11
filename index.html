@@ -866,5 +866,35 @@
         }
       });
     </script>
+
+    <!-- CallRail DNI persistence - re-run swap after page load/hydration -->
+    <script>
+      (function() {
+        function rerunCallRail() {
+          if (typeof window !== "undefined" && window.cr && typeof window.cr === "function") {
+            // Re-run CallRail swap after hydration/page load
+            window.cr("rerun");
+          }
+        }
+        
+        // Run immediately if CallRail is already loaded
+        if (document.readyState === "complete") {
+          rerunCallRail();
+        } else {
+          // Run after page is fully loaded
+          window.addEventListener("load", rerunCallRail);
+          // Also run after DOM is ready (in case of early execution)
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", function() {
+              setTimeout(rerunCallRail, 100);
+            });
+          }
+        }
+        
+        // Additional safety: re-run after a short delay to catch any late-loading scripts
+        setTimeout(rerunCallRail, 500);
+        setTimeout(rerunCallRail, 1000);
+      })();
+    </script>
 </body>
 </html>
